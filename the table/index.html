@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>الدوري اللورانسي</title>
+</head>
+<body>
+
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="#">المشاركين في الدوري (coming soon!!)</a></li>
+            <br>
+            <li><a href="rights/index.html">القوانين</a></li>
+            <br>
+            <li><a href="the table/index.html">جدول المبارايات</a></li>
+            <br>
+            <li><a href="#">(الفرق) الريئيسة</a></li>
+            <br>
+        </ul>
+    </div>
+ 
+    <nav>
+        <h1>الدوري اللورانسي</h1>
+
+        <ul>
+            <li><a href="#">المشاركين في الدوري (coming soon!!)</a></li>
+            <li><a href="rights/index.html">القوانين</a></li>
+            <li><a href="#">جدول المبارايات</a></li>
+            <li><a href="#">(الفرق) الريئيسة</a></li>
+        </ul>
+
+        <a onclick="toggleMobileNav()" id="menu-icon" href="#"><i class='bx bx-menu'></i></a>
+    </nav>
+
+    <section class="table-section">
+        <h2>جدول المبارايات</h2>
+        <table>
+            <tr>
+                <th>المباراة</th>
+                <th>الفرق</th>
+                <th>التاريخ</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>الفريق الاول vs الفريق الثاني</td>
+                <td>8/10/2024/4:25 PM</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>الفريق الثالث vs الفريق الرابع</td>
+                <td>8/10/2024/5:00 PM</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>الفريقين الفائزين vs بعض</td>
+                <td>الله اعلم نتفق تحت 😂</td>
+            </tr>
+        </table>
+    </section>
+
+    <script>
+          function toggleMobileNav() {
+              const mobileNav = document.querySelector('.mobile-nav');
+
+              if (mobileNav.style.display === "none" || mobileNav.style.display === "") {
+                  mobileNav.style.display = "flex";
+              } else {
+                  mobileNav.style.display = "none";
+              }
+          }
+
+          window.toggleMobileNav = toggleMobileNav;
+    </script>
+
+</body>
+</html>

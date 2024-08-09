@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>الدوري اللورانسي</title>
+</head>
+<body>
+
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="#">المشاركين في الدوري (coming soon!!)</a></li>
+            <br>
+            <li><a href="rights/index.html">القوانين</a></li>
+            <br>
+            <li><a href="#">جدول المبارايات</a></li>
+            <br>
+            <li><a href="#">(الفرق) الريئيسة</a></li>
+            <br>
+        </ul>
+    </div>
+ 
+    <nav>
+        <h1>الدوري اللورانسي</h1>
+
+        <ul>
+            <li><a href="#">المشاركين في الدوري (coming soon!!)</a></li>
+            <li><a href="rights/index.html">القوانين</a></li>
+            <li><a href="#">جدول المبارايات</a></li>
+            <li><a href="#">(الفرق) الريئيسة</a></li>
+        </ul>
+
+        <a onclick="toggleMobileNav()" id="menu-icon" href="#"><i class='bx bx-menu'></i></a>
+    </nav>
+
+    <section class="rights">
+        <h2>القوانين</h2>
+        <ul>
+            <li>1- هناك كروت صفراء و كروت حمراء</li>
+            <li>2- غير مسموح لاي لاعب الاعتراض تقسيمة فريقه او عن حكم الحكم</li>
+            <li>3- مسموح التسديد من قبل نصف الملعب</li>
+            <li>4- كابتن الفريق هو من يختار من عليه تسديد الفاولات او ضربات الترجيح</li>
+            <li>5- ستبدا المباريات يوم السبت الموافق 8/10/2024</li>
+            <li>6- لتشارك في الدوري عليك دفع 2 يوان صيني (جوائز!!)</li>
+            <li>7- !الفريق الفائز سيفوز ب24 يوان جائزة و وضع اسمه في موقع الدوري</li>
+            <li>8- الحكم الريئسي للمباراة الاولة هو ادم عابد</li>
+            <li>9- الحكم الرئيسي للمباراة الثانية و الثالثة هو احمد عمرو</li>
+            <li>10- الاوتات باليد</li>
+            <li>11- ميسي و سواريز عادي</li>
+        </ul>
+    </section>
+
+<script>
+    function toggleMobileNav() {
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        if (mobileNav.style.display === "none" || mobileNav.style.display === "") {
+            mobileNav.style.display = "flex";
+        } else {
+            mobileNav.style.display = "none";
+        }
+    }
+
+    window.toggleMobileNav = toggleMobileNav;
+</script>
+
+</body>
+</html>
