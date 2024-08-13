@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>الدوري اللورانسي</title>
+</head>
+<body>
+
+    <div class="mobile-nav">
+        <ul>
+            <br>
+            <li><a href="#">(الفرق) الريئيسة</a></li>
+            <br>
+            <li><a href="rights/index.html">القوانين</a></li>
+            <br>
+            <li><a href="the table/index.html">جدول المبارايات</a></li>
+            <br>
+            <li><a href="the ana/index.html">الاحصائيات</a></li>
+        </ul>
+    </div>
+ 
+    <nav>
+        <h1>الدوري اللورانسي</h1>
+
+        <ul>
+            <li><a href="the ana/index.html">الاحصائيات</a></li>
+            <li><a href="rights/index.html">القوانين</a></li>
+            <li><a href="the table/index.html">جدول المبارايات</a></li>
+            <li><a href="#">(الفرق) الريئيسة</a></li>
+        </ul>
+
+        <a onclick="toggleMobileNav()" id="menu-icon" href="#"><i class='bx bx-menu'></i></a>
+    </nav>
+
+    <section class="all-teams">
+        <div class="team">
+            <div class="team-header">
+                <h2>الفريق الاول</h2>
+                <p style="background-color: red;">0</p>
+            </div>
+            <div class="name">
+                <p>يوسف فرج</p>
+                <p>يحيي احمد سامي</p>
+                <p>سامي</p>
+            </div>
+        </div>
+        <div class="team">
+            <div class="team-header">
+                <h2>الفريق الثاني</h2>
+                <p>0</p>
+            </div>
+            <div class="name">
+                <p>عمر فرج</p>
+                <p>يس</p>
+                <p>اسر</p>
+            </div>
+        </div>
+        <div class="team">
+            <div class="team-header">
+                <h2>الفريق الثالث</h2>
+                <p style="background-color: red;">0</p>
+            </div>
+            <div class="name">
+                <p>عمرو</p>
+                <p>حمزه</p>
+                <p>يحيي توفيق</p>
+            </div>
+        </div>
+        <div class="team">
+             <div class="team-header">
+                 <h2>الفريق الرابع</h2>
+                 <p style="background-color: orange;">3</p>
+             </div>
+            <div class="name">
+                <p>ادم</p>
+                <p>احمد</p>
+                <p>باظا</p>
+            </div>
+        </div>
+        <div class="team">
+            <h2>الدكة</h2>
+            <div class="name">
+                <p>يوسف الديب</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        function toggleMobileNav() {
+            const mobileNav = document.querySelector('.mobile-nav');
+
+            if (mobileNav.style.display === "none" || mobileNav.style.display === "") {
+                mobileNav.style.display = "flex";
+            } else {
+                mobileNav.style.display = "none";
+            }
+        }
+
+        window.toggleMobileNav = toggleMobileNav; 
+
+    </script>
+
+</body>
+</html>

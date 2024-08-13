@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(241, 241, 241);
+}
+
+nav {
+    background-color: #333;
+    padding: 1rem 2rem;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+nav h1 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li {
+    position: relative;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    background-color: red;
+    width: 0;
+    height: 1.5px;
+    top: 25px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+#menu-icon {
+    display: none;
+    color: #fff;
+    font-size: x-large;
+}
+
+.mobile-nav {
+    justify-content: center;
+    align-items: center;
+    background-color: #111f2f;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: none;
+    transition: 1s;
+}
+
+.mobile-nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f4974;
+    width: 86rem;
+    height: 50px; 
+    list-style: none;
+}
+
+.mobile-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 730px) {
+    nav ul li a {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    nav ul li {
+        display: none;
+    }
+    #menu-icon {
+        display: block;
+    }
+}
+
+.table-section {
+    padding: 2rem;
+    background-color: #fff;
+    margin: 2rem auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.table-section h2 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.table-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-section table, .table-section th, .table-section td {
+    border: 1px solid #ddd; 
+    padding: 8px;
+}
+
+.table-section th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.table-section td {
+    text-align: center;
+}
+
+@media screen and (max-width: 580px) {
+    .table-section {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .table-section h2 {
+        font-size: 1.25rem;
+    }
+
+    .table-section table, .table-section th, .table-section td {
+        font-size: 0.9rem;
+    }
+}
